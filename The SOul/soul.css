@@ -21,11 +21,11 @@
 }
 
 .clickme {
-	cursor:url("media/select.png"),auto;
+	cursor:url("select.png"),auto;
 }
 
 .sudd {
-	cursor:url("media/sudd.png"),auto;
+	cursor:url("sudd.png"),auto;
 }
 
 .stretch:hover {
@@ -64,7 +64,7 @@ body {
 	background: linear-gradient(136deg, #ccee12, #e4e6d5, #fbaa05, #47c4f3, #ea5ab2);
 	background-size: 300% 300%;
  	background-attachment: fixed;
-	cursor:url("media/pointer.png"),auto;
+	cursor:url("pointer.png"),auto;
 	overflow:hidden;
 	overscroll-behavior: none;
 	
@@ -442,7 +442,7 @@ p.info {
 }
 
 a {
-	cursor:url("media/select.png"),auto;
+	cursor:url("select.png"),auto;
 	text-decoration:none;
 	color:white;
 
