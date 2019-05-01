@@ -1,0 +1,450 @@
+/*BACKGROUND ANIMATE*/
+@-webkit-keyframes AnimationName {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:18% 0%}
+    50%{background-position:83% 100%}
+    100%{background-position:18% 0%}
+}
+
+@keyframes fade {
+	from{opacity:0;}
+	to {opacity:1;}
+}
+
+.clickme {
+	cursor:url("media/select.png"),auto;
+}
+
+.sudd {
+	cursor:url("media/sudd.png"),auto;
+}
+
+.stretch:hover {
+	/*animation:stretchout 3s ease alternate infinite;*/
+	transform:scaleX(1.1);
+}
+
+
+
+
+.unstretch:hover {
+	/*animation:stretchout 3s ease alternate infinite;*/
+	transform:scaleX(0.9);
+}
+
+
+.unstretch,.stretch{	transition:2s;}
+
+.glow {
+	filter:blur(8px) hue-rotate(30deg);
+	
+}
+
+
+@font-face {
+  font-family: "WREMENA";
+  src: url('../Wremena Regular.woff') format('woff');
+
+}
+
+
+body {
+	margin:0;
+	padding:0;
+	color:white;
+	background: linear-gradient(136deg, #ccee12, #e4e6d5, #fbaa05, #47c4f3, #ea5ab2);
+	background-size: 300% 300%;
+ 	background-attachment: fixed;
+	cursor:url("media/pointer.png"),auto;
+	overflow:hidden;
+	overscroll-behavior: none;
+	
+
+	-webkit-animation: AnimationName 10s ease infinite;
+	-moz-animation: AnimationName 10s ease infinite;
+	animation: AnimationName 10s ease infinite;
+	
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+div#pageLoad {
+	display:grid;
+	grid-template-columns:auto;
+	grid-template-rows:auto;
+	width:100%;
+	height:100%;
+	position:fixed;
+	padding:10px;
+	 
+	
+	background: linear-gradient(136deg, #ccee12, #e4e6d5, #fbaa05, #47c4f3, #ea5ab2);
+	background-size: 300% 300%;
+ 	background-attachment: fixed;
+
+	-webkit-animation: AnimationName 10s ease infinite;
+	-moz-animation: AnimationName 10s ease infinite;
+	animation: AnimationName 10s ease infinite;
+}
+
+svg {
+	top:0;
+	bottom:0;
+	margin:auto;
+	position:absolute;
+	left:60px;
+	height:600px;
+	width:100%;
+	
+}
+
+#otherLine {
+	position:absolute;
+	right:60px;
+	left:93%;
+}
+
+h1,h2,h3,h4 {
+	font-size:40px;
+	padding-top:10px;
+	margin-top:0;
+	font-family:WREMENA;
+	font-weight:normal;
+	padding-left:15px;
+}
+
+h2 {
+	grid-row:3;
+	grid-column:2;
+	place-self:end;
+	padding-right:40px;
+	margin-bottom:30px;
+	
+}
+
+h3 {
+	grid-row:1;
+	grid-column:2;
+	justify-self:end;
+	padding-right:40px;
+	
+	
+}
+
+#glideup {
+    grid-row: 3;
+    grid-column: 2;
+    place-self: end;
+    padding-right: 40px;
+    margin-bottom: 100px;
+    list-style: none;
+    text-align: right;
+    font-family: WREMENA;
+    font-size: 40px;
+	position:absolute;
+}
+
+li {display:none;}
+
+#glideup li:hover {text-decoration:underline;}
+
+h4 {
+	grid-row:3;
+	grid-column:1;
+	align-self:end;
+	margin-bottom:30px;
+}
+
+p.info {
+	width: 75%;
+	height: 45%;
+	line-height:1.2;
+	text-align: center;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 2%;
+	bottom: 0;
+	position: absolute;
+	/* grid-row: 2; */
+	/* margin-top: -150px; */
+	/* grid-column: 1; */
+	font-size: 20px;
+	font-family: WREMENA;
+	letter-spacing: 0.2px;
+	/* text-shadow: black 1px 1px 4px; */
+	display: none;
+	text-shadow: black 1px 1px 4px;
+	
+	
+ 	
+	
+	
+}
+
+
+/*ACTUAL PAGES*/
+
+.clipThru {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	margin: auto;
+	width:840px;
+	height:100%;
+	clip-path: ellipse(420px 380px at center);
+	z-index:3;
+	
+	
+}
+
+
+
+#bg {
+	z-index:-1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	
+	
+}
+
+.erase {
+	position:absolute;
+	top: 0;
+	height:60px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	text-align:center;
+	font-family:WREMENA;
+	font-size:50px;
+	color:black;
+	animation:fade 1s linear alternate infinite;
+}
+.start {
+	position:absolute;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	width:100%;
+	height:100%;
+}
+.start img {
+	position: absolute;
+
+	width:70%;
+	
+	
+}
+
+
+
+
+.titletext{ 
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    margin-top: 100px;
+    width: 500px;
+    height: 300px;
+    font-size: 140px;
+	z-index:2;
+
+
+}
+
+.titletext p {
+	margin: 0;
+	padding: 0 0 250px 0;
+	text-align: center;
+	font-family: WREMENA;
+	color: white;
+	-webkit-text-stroke: 1px black;
+	cursor: url(media/select.png),auto;
+	transition: 1s;
+	
+ 
+ 
+}
+
+.titletext p:hover {
+	color:transparent;
+	
+}
+
+
+
+
+/*PRECIOUS STONES*/
+
+.stone {
+	height: 100%;
+	 width: 65%;
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 margin: auto;
+	 padding: 20px;
+	 display: grid;
+	 display: none;
+	 grid-template-columns: 50% 50%;
+	 grid-template-rows: 600px 600px 600px 600px 600px;
+
+	
+	
+}
+
+.quote {
+    font-family: WREMENA;
+    font-size: 40px;
+    width: 600px;
+    height: auto;
+    font-weight: lighter;
+    -webkit-text-stroke: 0.3px black;
+	position:absolute;
+	left:0;
+	top:0;
+	transition:1s;
+	z-index:-1;
+	display:none;
+	text-shadow: black 1px 1px 4px;
+	}
+
+
+.quote#one {
+ 
+    position: absolute;
+    grid-row: 1;
+    text-align: left;
+}
+
+#two {
+	
+    position: absolute;
+    grid-row: 1;
+    grid-column: 2;
+    text-align: right;
+    transform: translate(-100px,290px);
+}
+
+#three {
+	
+	
+    position: absolute;
+    grid-row: 2;
+    text-align: left;
+}
+
+#four {
+	
+	
+	position: absolute;
+	    grid-row: 2;
+	    grid-column: 2;
+	    text-align: right;
+	    transform: translate(-100px,300px);
+	}
+
+
+/*.one, .two , .three , .four , .five, {
+    position: absolute;
+	
+}*/
+	
+#five {
+    grid-row: 3;
+    position: absolute;
+}
+	
+#six {
+	grid-row: 4;
+	grid-column: 2;
+	transform: translate(-100px,-250px);
+	 text-align: right;
+	}
+
+.bubble{
+	width:400px;
+	height:auto;
+	display:inline;
+	align-self:center;
+}
+
+.bubble.rock {
+    margin-left: -50px;
+    width: 410px;
+	align-self: start;
+	
+}
+.bubble.skin {
+    transform: translate(-80px,-100px);
+    width: 550px;
+    align-self: start;
+	
+	
+}
+
+.bubble.orange {
+    margin-left: 10px;
+    align-self: end;
+    width: 440px;
+    transform: translate(30px, 50px);
+}
+
+.bubble.soap {
+    width: 390px;
+    margin-left: -10px;
+    align-self: end;
+    width: 390px;
+    margin-left: -10px;
+    align-self: end;
+    transform: translate(20px, 30px);
+	
+}
+
+.bubble.blood {
+	align-self: start;
+	    transform: translate(0,-70px);
+	    width: 480px;
+}
+
+.bubble.blossom {
+	align-self: end;
+	    transform: translate(30px,30px);	
+}
+
+a {
+	cursor:url("media/select.png"),auto;
+	text-decoration:none;
+	color:white;
+
+}
+
