@@ -1,0 +1,472 @@
+html {
+	/*cursor: url("media/cursos.png"), auto;*/
+	height:100%;
+	
+}
+
+@font-face {
+  font-family: "MYFONT";
+  src: url('AUTHENTICSans-60.woff') format('woff');
+
+}
+
+@font-face {
+  font-family: "ESTRO";
+  src: url('TYPE/EstroDOT-Reg.woff') format('woff');
+
+}
+
+a {
+	color: inherit; 
+	text-decoration:none;
+}
+
+body {
+   
+    height: 100%;
+	width:100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+	font-family:"MYFONT", sans-serif; 
+	
+	}
+
+ /*HEADER */
+header {
+		height:80px;
+		background:white;
+		width:100%;
+		right:0;
+		border-bottom:1px solid red;
+		position:fixed;
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		flex-direction:row;
+		z-index:10;
+	}
+
+	
+header button {
+		margin-left:25px;
+		margin-right:25px;
+		font-size:30px;
+		height:auto;
+		color:red;
+		background: none;
+		border:none;
+		font-family:"MYFONT", sans-serif; 
+		cursor: url("media/cursos.png"), auto;
+		
+	}
+	
+	header button:hover{
+		text-decoration:underline;
+	}
+	.logo {
+   		display:inline-block;
+   		height:70px;
+		position:absolute;
+		left:0;
+		right:0;
+		margin:auto;
+   		padding:0;
+   		fill:red;
+	}
+	
+	@media only screen and (max-width: 800px) {
+		.logo {
+			width:0;
+			}}
+
+/*INTRO*/
+	
+	#introdiv {
+		padding-top:80px;
+		height:auto;
+		display:flex;
+		flex-wrap:wrap;
+		background:white;
+		justify-content:flex-start;
+		align-content:flex-start;
+	
+	}
+
+	.gridbox {
+		border-top:1px solid red;
+		border-left:1px solid red;
+		width:33%;
+		height:50%;
+	}
+	
+	.insidebox {
+	    position:relative;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	     top:-2px;
+	     left:-3px;
+	     height:101%;
+	     width:101%;
+	     background-color:white;
+	     border-radius:30px;
+		 
+	}
+	
+	.insidebox p {
+		height:100%;
+		position:relative;
+		margin:50px 30px 10px 30px;
+		overflow: hidden;	
+		line-height:1.4;
+		font-size:19px;  
+		color:red;
+		padding:0;
+		
+	}
+	
+	.insidebox img {
+		width:80%;
+		width:auto;
+		max-height:300px;
+		z-index:10;
+	}
+	
+	a.source {
+		color:red;
+		text-decoration:underline;
+		font-weight:bolder;
+		
+		
+	}
+	
+	a.source:hover {
+font-style:italic;		text-decoration:underline;
+		
+	}
+	
+	
+	
+@media only screen and (max-width: 600px) {
+	#introdiv {
+		position:relative;
+		padding-top:80px;
+		margin-right:0px;
+		display:flex;
+		flex-wrap:nowrap;
+		height:auto;
+		flex-direction:column;
+		font-size:30px;
+	
+		background:white;
+		justify-content:flex-start;
+		align-content:flex-start;
+	}
+
+	.gridbox {
+		border-bottom:1px solid red;
+		width:100%;
+		height:auto;
+		background-color:white;
+		font-size:100px;
+		
+	}
+
+	.insidebox p {
+		font-size:30px;
+	}
+	  
+}
+
+@media only screen and (max-width: 1200px) and (min-width:600px) {
+
+	.gridbox {
+		border-bottom:1px solid red;
+		width:49%;
+		height:auto;
+		background-color:white;
+		font-size:100px;
+		
+	}
+
+	.insidebox p {
+		font-size:25px;
+	}
+	
+	.insidebox img {
+		max-height:600px;
+	}
+	  
+}
+
+
+
+
+
+/*MIDDLE DIV*/
+
+div.middle {
+	position:relative;
+	background:white;
+	width:100%;
+	color:red;
+	background-color:white;
+	z-index:15;
+   
+	}
+div#insidemiddle {
+	height:auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	z-index:15;
+	
+	
+}
+
+#HEADPANCAKE {
+	align-self:flex-start;
+	width:100%;
+	border-top:1px red solid;
+	
+	border-bottom:1px red solid;
+}
+
+#HEADPANCAKE h1 {
+	margin:100px 0 100px 0;
+	
+	font-family:"ESTRO";
+	font-size:69px;
+	text-align:center;
+	letter-spacing:1px;
+}
+
+.middlecontent {
+	border-bottom:1px solid red;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:30px;
+	
+}
+
+.middlecontent p {
+	padding:0px 20px 0px 20px;
+	
+}
+.middlecontent img{
+	height:600px;
+	width:auto;
+	transform:translateY(-10px) scale(1.3);
+
+}
+
+#description {
+	align-self:stretch;
+    text-align: justify;
+     text-justify: inter-word;
+	 line-height:1.5;
+	
+}
+
+.blurry {
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;	
+}
+.middlecontent-left {
+	border-right:1px solid red;	
+	height:100%;
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	font-size:45px;
+		
+}
+
+
+
+.middlecontent-right {
+	height:100%;
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	font-size:45px;
+	overflow:hidden;
+	
+	
+}
+
+.box{
+	border-bottom:1px solid red;
+	height:auto;
+	width:auto;
+	padding:20px;
+	margin:0;
+	background-color:white;
+    transition: 0.3s;
+	
+
+	
+}
+
+p.nomargin{margin:0;     text-align: justify 
+  text-justify: inter-word;
+}
+
+.closer{
+	border-bottom:0;
+	display:flex;
+	height:100%;
+	align-items:center;
+	line-height:100px;
+	
+	
+}
+
+.middlecontent-left >.closer {
+
+	line-height:70px;
+	
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.middlecontent-right, .middlecontent-left {
+		font-size:1em;;
+		}}
+@media only screen and (max-width: 800px) {
+	.middlecontent-right, .middlecontent-left {
+		font-size:0.7em;;
+		}
+		.middlecontent-left >.closer {
+
+			line-height:30px;
+	
+		}
+	
+	}
+
+
+	#gobutton {
+		display:flex;
+		width:100%;
+		justify-content:center;
+		color:red;
+		font-size:5em;
+		font-family:"ESTRO";
+		margin-bottom:-10px;
+	}
+	
+	#gobutton:hover {
+		animation:flashing 0.1s alternate linear infinite;
+	}
+
+
+	@keyframes flashing {
+		from {color:white; background-color:red;}
+		to {color:red; background-color:white;}
+	}
+
+
+
+/*BOOKSPREADS*/
+
+#workshopPages {
+	display:none;
+	color:red;
+}	
+	
+	
+
+.bookspread{
+	display:flex;
+	justify-content:center;
+	width:100%;
+	height:102%;
+	border-bottom:1px solid red;
+	
+	/*position:sticky;
+	top:0;*/
+	
+	}
+
+.left-page {
+	width:51%;
+	min-width:600px;
+	height:100%;
+	border-right:1px solid red;
+	overflow:scroll;
+}
+
+
+
+.left-page .convo {
+	margin-top:50px;
+	padding:30px;
+	top:0;
+	font-size:30px;
+	line-height:1.5;
+	margin-bottom:-10px;
+
+}
+
+.convo p {
+	padding:0;
+	margin:0;
+}
+
+.right-page {
+	margin:0;
+	right:0;
+	width:50%;
+	height:100%;
+	top:0px;
+	background-color:red;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:fixed;
+}
+
+.right-page img {
+	margin:10px;
+	
+	height:60%;
+	object-fit: contain;
+}
+
+
+
+/*SCROLL-BAR*/
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  /*background-color: red;*/
+ 
+}
+
+
+div::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+div::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  border-right:1px solid white;
+  /*background-color: red;*/
+ 
+}
+
+
+
+
+
+

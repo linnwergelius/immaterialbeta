@@ -1,0 +1,33 @@
+ul#glideup{
+	color:red;
+	font-size:30px;
+	width:650px;
+	padding:0;
+	display:flex;
+	justify-content:space-between;
+	display:none;
+	position:absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	
+	
+
+}
+
+
+li.navigation {
+	display:inline;
+	padding:0 10px 0 10px;
+	
+	
+}
+
+
+li:hover {
+	text-decoration:underline;
+	transition:1s;
+}
+button{
+outline: none;
+}
