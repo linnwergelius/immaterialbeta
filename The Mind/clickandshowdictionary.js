@@ -46,7 +46,7 @@ $("#C").mouseout(function() {
  //Gynoid
   $("#Gy").mouseover(function() {
     $( "#hidden" ).text( "A gynoid, or fembot, is a feminine humanoid robot. Gynoids appear widely in science fiction film and art. As more realistic humanoid robot design becomes technologically possible, they are also emerging in real-life robot design." );
-    $("#hideimg").attr("src","img for d/gynoid.jpg");
+    $("#hideimg").attr("src","img for d/Gynoid.jpg");
   });
 
   $("#Gy").mouseout(function() {
