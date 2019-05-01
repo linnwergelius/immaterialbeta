@@ -1,0 +1,71 @@
+.dictionary {
+	margin-top:500px;
+	position:absolute;
+	top:100%;
+    height: 100%;
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+
+ul.wordlist {
+	list-style:none;
+	font-size:50px;
+	line-height:2;
+	margin:0;
+	height:100%;
+	line-break:none;
+	float:left;
+	text-align:left;
+	
+}
+
+
+li.wordlist:hover {
+	font-style:italic;
+	text-decoration: underline;
+	
+}
+.left {
+	width:50%;
+	overflow:scroll;
+	
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+div.hidetext {
+	margin:15px;
+	width:80%;
+	
+
+
+}
+
+div.hidetext p {
+	text-align:right;
+	font-size:20px;
+	
+}
+
+#hideimg {
+	width:auto;
+	float:right;
+	margin:15px;
+	height:50%;
+	max-height:450px;
+	
+
+}
+
+
+#updown {
+	transform:rotate(180deg);
+	position:absolute;
+	right:1%;
+}

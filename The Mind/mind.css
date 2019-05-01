@@ -1,0 +1,327 @@
+@keyframes spin {
+	0%{transform:rotate(30deg);}
+	99%{transform:rotate(395deg);}
+	100%{transform:rotate(30deg);}
+}
+
+@keyframes spinback {
+	0%{transform:rotate(30deg);}
+	99%{transform:rotate(395deg);}
+	100%{transform:rotate(30deg);}
+}
+
+
+
+@keyframes updown {
+	from{bottom:-1%;}
+	to {bottom:2%;}
+}
+
+
+@keyframes updownbubble {
+	from{transform:translateY(-15px);}
+	to {transform:translateY(-0);;}
+}
+
+@font-face {
+	font-family:Authentic;
+	src:url(../AUTHENTICSans-90.woff2);
+}
+
+
+html, body{
+	width:100%;
+	padding:0;
+	margin:0;
+	font-size:30px;
+	scroll-behavior:smooth;
+	
+	
+	
+	
+	
+}
+
+body {
+	overflow:auto;
+	font-family:Authentic, sans-serif;
+	color:blue;
+    background-size: 100% 100%;	
+	background-repeat: repeat;
+	background-color:#DEE5F9;
+	background-attachment:fixed;
+	
+	
+		
+}
+
+/*LOAD*/
+#startscreen {
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	top:80px;
+	position:absolute;
+	flex-direction:column;
+	text-align:center;
+	filter:blur(0px);
+	z-index:6;
+}
+
+#startscreen p{
+	margin-top:-100px;
+	margin-bottom:100px;
+	width:80%;
+	color:white;
+	text-shadow:blue 0px 0px 10px;
+	
+}
+
+
+button {
+	appearance:none;
+	background-color:transparent;
+	padding:20px 20px 10px 20px;
+	color:blue;
+	border:2px solid blue;
+	transition:0.8s;
+	outline: none;
+	cursor:pointer;
+	border-radius:10px;
+	
+	
+}
+
+button:hover {
+	border-radius:50px;
+	
+}
+
+#remain	{
+	
+	filter:blur(0px);
+	opacity:1;
+	
+	
+	
+}
+
+#delete{
+	z-index:5;
+	background-color:#DEE5F9;
+}
+
+.blur {
+	position:absolute;
+	height:100%;
+	width:100%;
+	filter:blur(8px);
+	
+}
+
+/*STATIC INFO*/
+header {
+	position:absolute;
+	top:-1%;
+	left:1%;
+	margin:0;
+	padding:0;
+	height:100px;
+	width:200px;
+}
+
+footer {
+	position:absolute;
+	bottom:-1%;
+	right:1%;
+	text-align:right;
+}
+#navigate{
+	margin-top:0;
+}
+ul {
+	text-align:right;
+	list-style-type:none;
+	margin-bottom:0;
+}
+
+#glideup li:hover {
+	transform:translateX(-10px);
+	text-decoration:underline;
+}
+
+#glideup li {
+	display:none;
+	
+}
+
+.button {
+	font-size:1rem;
+	cursor:pointer;
+	
+}
+
+.arrow {
+	position:absolute;
+	bottom:-1%;
+	left:1%;
+	animation:updown 1s linear infinite alternate;
+	cursor:pointer;
+}
+
+
+/*THEME BUTTON*/
+
+#themecontain {
+	position:absolute;
+	top:3%;
+	right:1%;
+	font-size:0.5rem;
+	text-align:center;
+	
+}
+#theme {
+	display:flex;
+	
+	height:60px;
+	width:60px;
+	transform:rotate(45deg);
+}
+
+.halfcircle {
+	width:50%;
+	height:100%;
+	border-radius:60px 0 0 60px;
+	border:1px solid blue;
+	
+}
+
+.sky {
+	background-image:url('media/circlesky.jpg');
+	background-size:90% 100%;
+	border-bottom:1px solid blue;
+	border-right:0px solid blue;
+	
+}
+
+.reverse {
+		transform:scale(-1);
+		background-color:transparent;
+		outline-offset:-1px;
+		
+}
+
+.themetext {
+position:absolute;
+right:1%;
+
+}
+
+
+
+
+
+
+
+/*BUBBLES*/
+
+.container {
+	width:100%;
+	height:95%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	top:80px;
+	
+}
+
+.bubble {
+	border:8px solid blue;
+	text-align:center;
+	padding: 0.5em 5em 0.5em 5em;
+	border-radius:100%;
+	animation:updownbubble 3s linear infinite alternate;
+	
+
+}
+
+.main {
+	font-size:30px;
+	margin-bottom:10px;
+	display:relative;
+	padding: 0.5em 5em 0.5em 5em;
+	
+	
+	
+}
+
+.title {
+	transform:translate3d(100px, 50px, 0);
+	box-sizing:border-box;
+	font-size:15px;
+	position:absolute;
+	padding: 1em 2em 1em 2em;
+	top:0px;
+	left:0px;
+	display:none;
+	
+}
+
+
+
+
+/*THOUGHT*/
+
+#thoughtbubble {
+	width:300px;
+	height:300px;
+	position:absolute;
+	display:none;
+	transform:scale(2);
+	
+	
+}
+#thoughtbubble img {
+	position:absolute;
+	display:inline-block;
+	width:250px;
+	height:auto;
+	top:0;
+	left:0;
+}
+
+
+#thoughtbubble p {
+	position:absolute;
+
+	width:100%;
+	box-sizing:border-box;
+	padding:100px 30px 80px 30px;
+	overflow:scroll;
+	font-size:25px;
+	-webkit-shape-outside: url(#clipper);
+	    shape-outside: url(#clipper);
+	text-align:center;
+	transform:rotate(180deg);
+
+}
+
+.clipone {
+	clip-path:url(#clipper);
+	position:absolute;
+	width:300px;
+	height:350px;
+	overflow:scroll;
+	transform:translate(-36px,-38px) scale(0.8);
+	
+}
+
+a {
+	color:blue;
+}
+
+a:active {
+	color:blue;
+}
