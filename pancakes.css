@@ -248,7 +248,7 @@ div#insidemiddle {
 	width:100%;
 	display:flex;
 	justify-content:center;
-	align-items:center;
+	/*align-items:center;*/
 	font-size:30px;
 	
 }
@@ -276,7 +276,7 @@ div#insidemiddle {
 	width:100%;
 	display:flex;
 	justify-content:center;
-	/*align-items:center;*/	
+	align-items:center;	
 }
 .middlecontent-left {
 	/*border-right:1px solid red;*/	
