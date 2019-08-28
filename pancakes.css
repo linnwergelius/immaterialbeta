@@ -276,10 +276,10 @@ div#insidemiddle {
 	width:100%;
 	display:flex;
 	justify-content:center;
-	align-items:center;	
+	/*align-items:center;*/	
 }
 .middlecontent-left {
-	border-right:1px solid red;	
+	/*border-right:1px solid red;*/	
 	height:100%;
 	width:50%;
 	display:flex;
@@ -297,6 +297,7 @@ div#insidemiddle {
 	flex-direction:column;
 	font-size:45px;
 	overflow:hidden;
+	border-left:1px solid red;
 	
 	
 }
